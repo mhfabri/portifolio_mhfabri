@@ -1,244 +1,385 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Template Portifolio</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfólio de Matheus Fabri, desenvolvedor web focado em criar experiências digitais funcionais e responsivas.">
+    <meta name="author" content="Matheus Fabri">
+
+    <title>< mhfabri / ></title>
+
+    <!-- Ícone e fontes -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Ícones e estilos -->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
-        type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <span class="d-block d-lg-none">
-                < / Fabri>
-            </span>
-            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
-                    src="assets/img/profile.png" alt="..." /></span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
-                class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Sobre</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experiencias</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Estudos</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Habilidades</a></li>
-            </ul>
-        </div>
-    </nav>
-    <!-- Page Content-->
-    <div class="container-fluid p-0">
-        <!-- About-->
-        <section class="resume-section" id="about">
-            <div class="resume-section-content">
+<body>
+    <!-- Cabeçalho e navegação -->
+    <header class="site-header" id="topo">
+        <nav class="nav container" aria-label="Navegação principal">
+            <a class="brand" href="#sobre" aria-label="Voltar ao início">
+                <span>&lt;/</span> mhfabri<span>&gt;</span>
+            </a>
 
-                <h1 class="escrevendo" id="typing">
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu"
+                aria-label="Abrir menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
+            <div class="nav-links" id="menu">
+                <a class="active" href="#sobre">Sobre</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#trajetoria">Trajetória</a>
+                <a href="#habilidades">Habilidades</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Apresentação -->
+        <section class="hero container section" id="sobre">
+            <div class="hero-copy reveal">
+
+                <h1>
+                    Olá, eu sou<br>
+                    <span class="highlight" id="typing">Matheus Fabri</span>
+                    <span class="cursor" aria-hidden="true">.</span>
                 </h1>
 
-                <div class="subheading mb-5">
-                    Web Developer · Junior · (11) 96619-6719 ·
-                    <a href="mailto:matheusfabri337@gmail.com">matheusfabri337@gmail.com</a>
+                <p class="hero-text">
+                    Desenvolvedor web júnior que transforma ideias em experiências digitais
+                    <strong>claras, funcionais e responsivas.</strong>
+                </p>
+
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projetos">
+                        Conheça meu trabalho
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+                    <a class="button button-ghost" href="mailto:matheusfabri337@gmail.com">
+                        Entre em contato
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </a>
                 </div>
-                <p class="lead mb-5">Eu sou desenvolvedor web junior, ja fiz alguns projetos para empresas e pessoas
-                    interessadas, ainda estou estudando e busco uma maior imersao no mercado da minha area.</p>
-                <div class="social-icons">
-                    <a class="social-icon" href="https://www.linkedin.com/in/matheus-fabri-aa3652283"><i
-                            class="fab fa-linkedin-in"></i></a>
-                    <a class="social-icon" href="https://github.com/mhfabri"><i class="fab fa-github"></i></a>
+
+                <div class="social-links" aria-label="Redes sociais">
+                    <a href="https://github.com/mhfabri" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/matheusfabri" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:matheusfabri337@gmail.com" aria-label="Enviar e-mail">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal">
+                <div class="portrait-frame">
+                    <div class="portrait-glow"></div>
+                    <img src="assets/img/profile.png" alt="Foto de Matheus Fabri">
+                    <span class="code-tag tag-one">&lt;code /&gt;</span>
+                    <span class="code-tag tag-two">design();</span>
+                </div>
+
+                <div class="hero-note">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>
+                        São Paulo, Brasil<br>
+                        <small>Construindo para a web</small>
+                    </span>
                 </div>
             </div>
         </section>
-        <hr class="m-0" />
-        <!-- Experience-->
-        <section class="resume-section" id="experience">
-            <div class="resume-section-content reveal">
-                <h2 class="mb-5">Experiencias</h2>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Aumento do publico e dos estudos</h3>
-                        <div class="subheading mb-3">Mais buscas pelo meu trabalho e maior aprimoramento nos estudos
+
+        <!-- Números de destaque -->
+        <section class="numbers container" aria-label="Resumo profissional">
+            <div>
+                <strong>03<span>+</span></strong>
+                <small>projetos publicados</small>
+            </div>
+            <div>
+                <strong>04<span>+</span></strong>
+                <small>anos estudando tecnologia</small>
+            </div>
+            <div>
+                <strong>100<span>%</span></strong>
+                <small>dedicação em cada entrega</small>
+            </div>
+        </section>
+
+        <!-- Projetos -->
+        <section class="section container" id="projetos">
+            <div class="section-heading reveal">
+                <div>
+                    <p class="eyebrow">01 / Projetos selecionados</p>
+                    <h2>
+                        Projetos desenvolvidos<br>
+                        <em>para aplicação de aprendizado.</em>
+                    </h2>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card project-large reveal">
+                    <div class="project-image">
+                        <img src="assets/img/projeto_gerenciador.png" alt="Interface do Projeto Gerenciador">
+                        <span class="project-number">01</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span>Sistema web</span>
+                            <span>2024</span>
                         </div>
-                        <p>Mais pessoas passaram a me buscar para produzir sites e projetos para suas empresas e
-                            negocios proprios; aumentei minha base de estudos e busquei instituições mais famosas e mais
-                            focadas na area da tecnologia e programação.</p>
+                        <h3>Projeto Gerenciador</h3>
+                        <p>
+                            Uma plataforma para organização e gestão, construída para apoiar pequenas e médias
+                            empresas no dia a dia.
+                        </p>
+                        <div class="tech-list">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                        </div>
+                        <a class="text-link" href="https://mhfabri.infinityfreeapp.com/login.php" target="_blank"
+                            rel="noopener noreferrer">
+                            Ver projeto
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">2024-2026 (atualmente)</span></div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-image">
+                        <img src="assets/img/assediomoral.png" alt="Página do projeto sobre assédio moral">
+                        <span class="project-number">02</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span>Projeto educacional</span>
+                            <span>2023</span>
+                        </div>
+                        <h3>Sobre Assédio Moral</h3>
+                        <p>
+                            Site informativo criado para conscientizar, acolher e orientar pessoas sobre o tema.
+                        </p>
+                        <div class="tech-list">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a class="text-link" href="https://mhfabri.github.io/feiratecnologica/" target="_blank"
+                            rel="noopener noreferrer">
+                            Ver projeto
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-image">
+                        <img src="assets/img/chatonline.png" alt="Interface do projeto Chatonline">
+                        <span class="project-number">03</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span>Ferramenta de suporte</span>
+                            <span>2024</span>
+                        </div>
+                        <h3>Chatonline</h3>
+                        <p>
+                            Base de um sistema de atendimento ao vivo para aproximar equipes e usuários.
+                        </p>
+                        <div class="tech-list">
+                            <span>Node.js</span>
+                            <span>SQL</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a class="text-link" href="https://chatonline-jet.vercel.app/" target="_blank"
+                            rel="noopener noreferrer">
+                            Ver projeto
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Trajetória -->
+        <section class="section section-muted" id="trajetoria">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <div>
+                        <p class="eyebrow">02 / Minha trajetória</p>
+                        <h2>
+                            Minha evolução<br>
+                            <em>até hoje.</em>
+                        </h2>
+                    </div>
                 </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Inicio de projetos empresariais</h3>
-                        <div class="subheading mb-3">Comecei a montar projetos para empresas</div>
-                        <p>Comecei a produzir projetos para empresas pequenas e oferecer o que solicitavam em mudanças e
-                            suporte.</p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">2023-2024</span></div>
-                </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">Projetos Pessoais</h3>
-                        <div class="subheading mb-3">Comecei a colocar meus estudos em pratica</div>
-                        <p>Eu iniciei projetos pessoais para testar o teorico dos meus estudos em pratica e observar o
-                            que era necessario para eu aprimorar e buscar melhorias em meus erros e falhas.</p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">2022</span></div>
+
+                <div class="timeline">
+                    <article class="timeline-item reveal">
+                        <span class="timeline-year">2024 — hoje</span>
+                        <div>
+                            <h3>Expansão e aprimoramento</h3>
+                            <p>
+                                Mais pessoas passaram a buscar meu trabalho. Ampliei minha base de estudos e comecei a
+                                me aprofundar em soluções mais completas para a web.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item reveal">
+                        <span class="timeline-year">2023 — 2024</span>
+                        <div>
+                            <h3>Primeiros projetos empresariais</h3>
+                            <p>
+                                Comecei a criar projetos para pequenas empresas, oferecendo desenvolvimento, mudanças
+                                e suporte conforme cada necessidade.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item reveal">
+                        <span class="timeline-year">2022</span>
+                        <div>
+                            <h3>O início da prática</h3>
+                            <p>
+                                Coloquei meus estudos em prática com projetos pessoais, testando ideias e entendendo
+                                como transformar erros em melhorias.
+                            </p>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
-        <hr class="m-0" />
-        <!-- Education-->
-        <section class="resume-section reveal" id="education">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Estudos</h2>
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">ETEC Maria Cristina Medeiros</h3>
-                        <div class="subheading mb-3">Tecnico em Informatica para Internet</div>
-                        <p>Com certificação</p>
-                    </div>
-                    <div class="flex-shrink-0"><span class="text-primary">2025 - 2027 (cursando)</span></div>
+
+        <!-- Habilidades e formação -->
+        <section class="section container skills-section" id="habilidades">
+            <div class="section-heading reveal">
+                <div>
+                    <p class="eyebrow">03 / Habilidades & formação</p>
+                    <h2>
+                        Ferramentas para<br>
+                        <em>desenvolvimento.</em>
+                    </h2>
                 </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between">
-                    <div class="flex-grow-1">
-                        <h3 class="mb-0">LinkeDin Learning - Microsoft</h3>
-                        <div class="subheading mb-3">Fundamentos Para Analise de Dados</div>
-                        <p>Com certificação</p>
+            </div>
+
+            <div class="skills-layout">
+                <div class="skills-list reveal">
+                    <h3>Stack principal</h3>
+
+                    <div class="skill">
+                        <span><i class="fab fa-html5"></i> HTML5</span>
+                        <b>90%</b>
+                        <i class="progress"><i style="width: 90%"></i></i>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">2022-2023</span></div>
+
+                    <div class="skill">
+                        <span><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <b>85%</b>
+                        <i class="progress"><i style="width: 85%"></i></i>
+                    </div>
+
+                    <div class="skill">
+                        <span><i class="fab fa-js"></i> JavaScript</span>
+                        <b>75%</b>
+                        <i class="progress"><i style="width: 75%"></i></i>
+                    </div>
+
+                    <div class="skill">
+                        <span><i class="fab fa-php"></i> PHP</span>
+                        <b>65%</b>
+                        <i class="progress"><i style="width: 65%"></i></i>
+                    </div>
+
+                    <div class="grid-card-stacks">
+                        <div class="card-stacks" aria-label="Git"><i class="fa-brands fa-git-alt"></i></div>
+                        <div class="card-stacks" aria-label="GitHub"><i class="fa-brands fa-github"></i></div>
+                        <div class="card-stacks" aria-label="Figma"><i class="fa-brands fa-figma"></i></div>
+                        <div class="card-stacks" aria-label="Python"><i class="fa-brands fa-python"></i></div>
+                        <div class="card-stacks" aria-label="Bootstrap"><i class="fa-brands fa-bootstrap"></i></div>
+                        <div class="card-stacks" aria-label="Banco de dados"><i class="fa-solid fa-database"></i></div>
+                    </div>
+                </div>
+
+                <div class="education-card reveal">
+                    <p class="eyebrow">Formação atual</p>
+                    <h3>Técnico em Informática para Internet</h3>
+                    <p class="school">ETEC Maria Cristina Medeiros</p>
+                    <span class="education-date">2025 — 2027 · Cursando</span>
+
+                    <hr>
+
+                    <p class="eyebrow">Certificação</p>
+                    <h3>Fundamentos para Análise de Dados</h3>
+                    <p class="school">LinkedIn Learning · Microsoft</p>
+                    <span class="education-date">2022 — 2023</span>
+
+                    <hr>
+
+                    <p class="eyebrow">Certificação</p>
+                    <h3>Banco de Dados com SQL</h3>
+                    <p class="school">Microlins</p>
+                    <span class="education-date">2026</span>
+
+                    
                 </div>
             </div>
         </section>
-        <hr class="m-0" />
-        <!-- Skills-->
-        <section class="resume-section reveal" id="skills">
-            <div class="resume-section-content">
 
-                
-                <h2 class="mb-5">Projetos</h2>
-
-
-                <div id="carouselExample" class="carousel slide">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <!-- card para projetos do portifolio -->
-                            <div class="card" style="width: 18rem;">
-                                <img src="assets/img/projeto_gerenciador.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="subheading">Projeto Gerenciador</h5>
-                                    <p class="card-text">Meu primeiro projeto feito para portifolio e que chamou atenção
-                                        de algumas pequenas e médias empresas.</p>
-                                    <p>Esse projeto foi desenvolvido inicialmente em HTML CSS e JS, depois aprimorado
-                                        com PHP no login.</p>
-                                    <p>Pretendo ainda fazer melhorias essenciais, como fazer um banco de dados proprio
-                                        para tirar o local storage, melhorar o UI do projeto, entre outras coisas.</p>
-                                    <a href="https://mhfabri.infinityfreeapp.com/login.php" class="btn">Conferir</a>
-                                </div>
-                            </div>
-                            <!-- fim do card -->
-                        </div>
-                        <div class="carousel-item">
-                            <!-- card para projetos do portifolio -->
-                            <div class="card">
-                                <img src="assets/img/assediomoral.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="subheading">Projeto Sobre Assedio Moral</h5>
-                                    <p class="card-text">O intuito do projeto é informar, educar e conscientizar sobre o tema, e assim mostrar suas consequências, formas de enfrentar e expressar tudo aquilo que passa, mostrar para quem pratica o assédio que está desestruturando não só uma pessoa, mas sim todos que estão à sua volta.</p>
-                                    <p>Ninguém merece ser oprimido ou sofrer por coisas do tipo. </p>
-                                    <p>Dito isto vamos abranger todos os afetados e prestar a solidariedade cabível a nós e permitir que se sintam acolhidos e possam se libertar dos sentimentos de culpa que são causados por tudo o que passam.</p>
-                                    <a href="https://mhfabri.github.io/feiratecnologica/" class="btn">Conferir</a>
-                                </div>
-                            </div>
-                            <!-- fim do card -->
-                        </div>
-                        <div class="carousel-item">
-                            <div class="card">
-                                <img src="assets/img/chatonline.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="subheading">Chatonline</h5>
-                                    <p class="card-text">Este Projeto foi desenvolvido como uma base para a criação de sistemas de suporte ao vivo para projetos maiores, trazendo a maior facilidade para a equipe SAC da empresa.</p>
-                                    <p>Foi utilizado Node.js, SQL e JS para criação do servidor e do sistema, futuramente irei implementar em outros projetos, como o Projeto Gerenciador para facilidade de atendimento aos usuarios.</p>
-                                    <p>A implementação deste sistema em projetos grandes éessencial para ter um feedback dos usuarios e para manutenção de pequenos erros dentro dos projetos e sistemas, facilitando assim a identificação do mesmo.</p>
-                                    <a href="https://chatonline-jet.vercel.app/" class="btn">Conferir</a>
-                                    <br><small class="aviso">possivelmente o projeto esteja desativado no momento pois estou arrumando um delay do servidor.</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-                <h2 class="mb-5">Habilidades</h2>
-                <div class="subheading mb-3">Linguagens de programação e ferramentas</div>
-                <ul class="list-inline dev-icons">
-                    <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-php"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-python"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-bootstrap"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-github"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-git-alt"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-figma"></i></li>
-                </ul>
-                <div class="subheading mb-3">Qualidades de trabalho</div>
-                <ul class="fa-ul mb-0">
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Design responsivo
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Teste entre navegadores e dispositivos
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Equipe de uma pessoa para desenvolvimento
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Desenvolvimento agil e iterativo
-                    </li>
-                </ul>
+        <!-- Contato -->
+        <section class="contact-section">
+            <div class="container contact-inner reveal">
+                <p class="eyebrow">Vamos construir algo juntos?</p>
+                <h2>
+                    Deseja desenvolver algo?<br>
+                    <em>Entre em contato!</em>
+                </h2>
+                <a class="button button-primary" href="mailto:matheusfabri337@gmail.com">
+                    Enviar uma mensagem
+                    <i class="fa-regular fa-paper-plane"></i>
+                </a>
             </div>
-
-
         </section>
-        <hr class="m-0" />
+    </main>
 
-    </div>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Rodapé -->
+    <footer class="footer container">
+        <a class="brand" href="#sobre">
+            <span>&lt;/</span> mhfabri<span>&gt;</span>
+        </a>
 
+        <p>Desenvolvido por <a href="https://github.com/mhfabri" style="text-decoration: underline;">< mhfabri / ></a></p>
 
-    <!-- Animation Framework-->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <div class="social-links">
+            <a href="https://github.com/mhfabri" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/matheusfabri" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+    </footer>
 
-    <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-
-
 </body>
 
 </html>
